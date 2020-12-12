@@ -21,12 +21,12 @@ class Autos(threading.Thread):
     def entroABoxes(self):
         while True:
             if(len(listaBoxes) < cantidadMaximaDePitsHabilitados):
-                print("corredor", self.nro, "- Bandera verde, me meto al pit.")
+                print("corredor", self.nro, "- Bandera albondiga, me meto al pit.")
                 listaBoxes.append(self)
                 tiempoEspera(5)
                 self.vuelvoALaPista()
             else:    
-                print("corredor",self.nro, "- Boxes cerrados, otra vuelta mas, a ver si llego...")
+                print("corredor",self.nro, "- Bandera Roja cruzada, Boxes cerrados, otra vuelta mas, a ver si llego...")
                 exit()
 
     def vuelvoALaPista(self):
